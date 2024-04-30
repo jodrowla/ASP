@@ -1,0 +1,22 @@
+@page
+@model CreateEmployeeModel
+
+<h2>Create New Employee</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="EmployeeId">Employee ID</label>
+        <input type="text" class="form-control" id="EmployeeId" asp-for="Employee.EmployeeId" />
+    </div>
+    <div class="form-group">
+        <label for="LastName">Last Name</label>
+        <input type="text" class="form-control" id="LastName" asp-for="Employee.LastName" />
+    </div>
+    <div class="form-group">
+        <label for="FirstName">First Name</label>
+        <input type="text" class="form-control" id="FirstName" asp-for="Employee.FirstName" />
+<   /div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
